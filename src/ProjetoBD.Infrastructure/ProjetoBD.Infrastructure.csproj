@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="RavenDB.Client" Version="5.4.103" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoBD.Application\ProjetoBD.Application.csproj" />
+    <ProjectReference Include="..\ProjetoBD.Domain.Core\ProjetoBD.Domain.Core.csproj" />
+    <ProjectReference Include="..\ProjetoBD.Services\ProjetoBD.Services.csproj" />
+  </ItemGroup>
+
+</Project>
